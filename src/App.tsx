@@ -1,18 +1,18 @@
 import { Button } from "./components/ui/Button";
 import { PlusIcon } from "./icons/PlusIcon";
+import { ShareIcon } from "./icons/ShareIcon";
 
 function App() {
   return (
     <>
       <Button
-        startIcon={<PlusIcon />}
+        startIcon={<PlusIcon size="lg" />}
+        size="md"
         variant="primary"
-        text="Share"
-        size="sm"
+        text="Hello"
+        onClick={() => {}}
+        endIcon={<ShareIcon size="lg"/>}
       />
-      <Button variant="secondary" text="Add content" size="md" />
-      <Button variant="secondary" text="Add content" size="lg" />
-      <p className="bg-purple-600">hello</p>
     </>
   );
 }
